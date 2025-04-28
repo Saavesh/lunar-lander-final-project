@@ -1,6 +1,16 @@
-# Ignore Jupyter Notebook checkpoints
+# Python junk files
+__pycache__/
+*.pyc
+
+# Auto-saved Jupyter notebook backups
 .ipynb_checkpoints/
 
-# Ignore macOS system files
+# Mac system file
 .DS_Store
 
+# Old project versions
+archive/
+
+# Checkpoints or model weights
+*.pth
+*.h5
