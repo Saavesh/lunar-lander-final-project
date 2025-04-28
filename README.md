@@ -3,7 +3,7 @@
 ---
 ## Table of Contents
 - [Project Description](#project-description)
-- [Folder Structure](#folder-structure)
+- [Approach and File Structure](#approach-and-file-structure)
 - [Environment Setup](#environment-setup)
 - [Result](#result)
 - [Conclusion Discussion and Reflection](#conclusion-discussion-and-reflection)
@@ -13,20 +13,31 @@
 ## Project Description
 
 This project explores reinforcement learning using the [LunarLander-v3 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/) from OpenAI Gymnasium. The LunarLander-v3 environment simulates a classic rocket landing task.
-The objective is to train (or simulate) an agent that can land a lunar module safely between two flags, balancing fuel consumption and landing precision.
-Rewards are assigned for safe landings and penalties are given for crashes, fuel waste, and unstable movements.
+The objective is to train or simulate an agent that can land a lunar module safely between two flags, while minimizing fuel usage and maintaining balance.
+
+Rewards are assigned for:
+- **Safe landings**
+- **Efficient fuel usage**
+- **Stable motion**
+
+Penalties are given for:
+- **Crashes**
+- **Unstable angles**
+- **Unnecessary thruster firing**
 
 ---
 
 
-## Folder Structure
+## Approach and Folder Structure
 ```
 lunar-lander-final-project/
-├── Lunar-Lander-Final-Project.ipynb
-└── README.md
-└── .gitignore.md
+├── Lunar-Lander-Final-Project.ipynb        # Main project notebook
+├── README.md                               # Project write-up
+├── requirements.txt                        # List of dependencies
+└── .gitignore                              # Files and folders to ignore
 ```
 
+---
 
 
 
@@ -41,11 +52,13 @@ Here are the main libraries you’ll need:
 | [Box2D-py](https://github.com/openai/box2d-py) | Physics engine for 2D simulation (required for LunarLander) | [GitHub](https://github.com/openai/box2d-py) |
 | [Matplotlib](https://matplotlib.org/) | Plotting results and visualizations | [Website](https://matplotlib.org/) |
 | [Pygame](https://www.pygame.org/) | Rendering game windows (optional) | [Website](https://www.pygame.org/) |
+| [NumPy](https://numpy.org/) | Numerical operations | [Website](https://numpy.org/) |
 
-To install all dependencies, you can run:
+
+You can install everything  with:
 
 ```bash
-pip install gymnasium[box2d] pygame matplotlib
+pip install -r requirements.txt
 ```
 
 ## Result
