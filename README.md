@@ -1,4 +1,16 @@
-#### Project Description
+# Lunar Lander - Reinforcement Learning Project
+
+---
+## Table of Contents
+- [Project Description](#project-description)
+- [Folder Structure](#folder-structure)
+- [Environment Setup](#environment-setup)
+- [Result](#result)
+- [Conclusion Discussion and Reflection](#conclusion-discussion-and-reflection)
+- [References](#references)
+
+
+## Project Description
 
 This project explores reinforcement learning using the [LunarLander-v3 environment](https://gymnasium.farama.org/environments/box2d/lunar_lander/) from OpenAI Gymnasium. The LunarLander-v3 environment simulates a classic rocket landing task.
 The objective is to train (or simulate) an agent that can land a lunar module safely between two flags, balancing fuel consumption and landing precision.
@@ -7,18 +19,21 @@ Rewards are assigned for safe landings and penalties are given for crashes, fuel
 ---
 
 
-#### 2. Approach
+## Folder Structure
+```
 lunar-lander-final-project/
-│
-├── Lunar-Lander-Final-Project.ipynb    # Project notebook (code)
-├── README.md                           # Project writeup
-├── run_random_agent.py                 # Script to run random agent
-├── images/                             # Folder for screenshots or GIFs
-│   ├── lunar_lander_demo.gif           # (image placeholder)
-└── rl-env/                             # Virtual environment (ignored by Git)
+├── Lunar-Lander-Final-Project.ipynb
+└── README.md
+└── .gitignore.md
+```
 
-### Environment Setup
-This project was developed in **Python 3.13** with the following main libraries:
+
+
+
+## Environment Setup
+
+This project was developed using **Python 3.13**.  
+Here are the main libraries you’ll need:
 
 | Library | Description | Link |
 |:--------|:------------|:-----|
@@ -31,20 +46,18 @@ To install all dependencies, you can run:
 
 ```bash
 pip install gymnasium[box2d] pygame matplotlib
+```
 
-#### Result
-
-
-#### Conclusion, Discussion, and Reflection
+## Result
 
 
-#### Reference
+## Conclusion, Discussion, and Reflection
+
+
+## References
 * [Gymnasium LunarLander-v3 docs](https://gymnasium.farama.org/environments/box2d/lunar_lander/)
 * [PyTorch RL tutorial](https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html)
 * [DQN for LunarLander example (yuchen071)](https://github.com/yuchen071/DQN-for-LunarLander-v2)
-
-
-
-
+* [Box2D Physics Engine](https://box2d.org/)
 
 
