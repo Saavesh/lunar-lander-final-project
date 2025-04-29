@@ -12,5 +12,4 @@ __pycache__/
 archive/
 
 # Checkpoints or model weights
-*.pth
 *.h5
